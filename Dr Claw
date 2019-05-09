@@ -21,6 +21,17 @@ int main()
     motor(1,100);
     motor(2,100);
     msleep(11000);
-    
-    
+    int counter = 1700;
+    set_servo_position(0, counter);
+    set_servo_position(1,2047);
+    enable_servos();
+    while (counter > 380)
+    {
+        msleep(1000);
+        counter = counter - 30;
+        set_servo_position(0, counter);
+    }
+    msleep(1000);
+    disable_servos();
+    return 0;
 }
