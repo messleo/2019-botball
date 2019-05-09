@@ -1,1 +1,26 @@
 
+#include <kipr/botball.h>
+
+int main()
+{
+   motor(1,75);
+   motor(2,75);
+    msleep(4000);
+    motor(1,300);
+    msleep(2500);
+    motor(1,100);
+    motor(2,100);
+    msleep(5000);
+    motor(1,800);
+    msleep(4000);
+    motor(1,75);
+    motor(2,75);
+    msleep(3500);
+    motor(2,300);
+    msleep(2500);
+    motor(1,100);
+    motor(2,100);
+    msleep(11000);
+    
+    
+}
